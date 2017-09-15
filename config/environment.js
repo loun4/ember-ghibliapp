@@ -25,6 +25,7 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.AJAX_TIMEOUT = 10000;
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -44,7 +45,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.AJAX_TIMEOUT = 5000;
   }
 
   return ENV;
