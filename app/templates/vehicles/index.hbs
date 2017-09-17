@@ -1,0 +1,10 @@
+
+{{entity-list
+    data=model
+    cols=(array
+        (hash title='Name' key='name')
+        (hash title='Class' key='vehicle_class')
+        (hash title='Length' key='length')
+    )
+    linkTo=(hash route='vehicles.vehicle' param='id')
+}}
