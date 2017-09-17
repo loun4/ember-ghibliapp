@@ -9,9 +9,13 @@
 {{#each relatedEntities as |entity|}}
   <h2>{{entity.title}}</h2>
 
+  <ul>
   {{#each entity.data as |item|}}
+    <li>
     {{#link-to entity.link item.id}}
       {{get item entity.key}}
     {{/link-to}}
+    </li>
   {{/each}}
+  </ul>
 {{/each}}

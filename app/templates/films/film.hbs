@@ -1,7 +1,32 @@
 
-{{film-page
-	film=model.film
-    people=model.people
-    locations=model.locations
-    vehicles=model.vehicles
+{{entity-page
+  data=model.film
+  sections=(array
+    (hash title='Title' key='title')
+    (hash title='Description' key='description')
+    (hash title='Director' key='director')
+    (hash title='Producer' key='producer')
+    (hash title='Release date' key='release_date')
+    (hash title='Rate score' key='rt_score')
+  )
+  relatedEntities=(array
+    (hash
+      title="Poeple"
+      key="name"
+      data=model.people
+      link='people.person'
+    )
+    (hash
+      title="Locations"
+      key="name"
+      data=model.locations
+      link='locations.location'
+    )
+    (hash
+      title="Vehicles"
+      key="name"
+      data=model.vehicles
+      link='vehicles.vehicle'
+    )
+  )
 }}
