@@ -20,7 +20,7 @@ export default Ember.Object.extend({
 
     associations.forEach(field => {
       let entry = this.get(field);
-      if (!entry) { return };
+      if (!entry) { return }
 
       if (Array.isArray(entry)) {
         entry = entry.filter(hasUUID).map(url => url.split('/').pop());
