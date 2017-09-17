@@ -1,8 +1,8 @@
 
-import Ember from 'ember';
+import Base from './__base__';
 
 
-export default Ember.Object.extend({
+export default Base.extend({
   urlRoot: '/films',
   id: null,
   title: '',
