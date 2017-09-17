@@ -1,2 +1,10 @@
 
-{{film-list films=model}}
+{{entity-list
+    data=model
+    cols=(array
+        (hash title='Title' key='title')
+        (hash title='Relase date' key='release_date')
+        (hash title='Score' key='rt_score')
+    )
+    linkTo=(hash route='films.film' param='id')
+}}
