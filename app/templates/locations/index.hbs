@@ -1,0 +1,10 @@
+
+{{entity-list
+    data=model
+    cols=(array
+        (hash title='Name' key='name')
+        (hash title='Climate' key='climate')
+        (hash title='Terrain' key='terrain')
+    )
+    linkTo=(hash route='locations.location' param='id')
+}}

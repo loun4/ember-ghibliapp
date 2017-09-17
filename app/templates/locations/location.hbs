@@ -1,0 +1,18 @@
+
+{{entity-page
+  data=model.location
+  sections=(array
+    (hash title='Title' key='name')
+    (hash title='Climate date' key='climate')
+    (hash title='Terrain' key='terrain')
+    (hash title='Surface water' key='surface_water')
+  )
+  relatedEntities=(array
+    (hash
+      title="Films"
+      key="title"
+      data=model.films
+      link='films.film'
+    )
+  )
+}}
