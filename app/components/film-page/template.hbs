@@ -28,7 +28,11 @@
   Poeple
   <ul>
   {{#each people as |people|}}
-    <li>{{people.name}}</li>
+    <li>
+      {{#link-to "people.person" people.id}}
+        {{people.name}}
+      {{/link-to}}
+    </li>
   {{/each}}
   </ul>
 </div>
@@ -37,7 +41,11 @@
   Locations
   <ul>
   {{#each locations as |location|}}
-    <li>{{location.name}}</li>
+    <li>
+      {{#link-to "locations.location" location.id}}
+        {{location.name}}
+      {{/link-to}}
+    </li>
   {{/each}}
   </ul>
 </div>
@@ -46,7 +54,11 @@
   Vehicles
   <ul>
   {{#each vehicles as |vehicle|}}
-    <li>{{vehicle.name}}</li>
+    <li>
+      {{#link-to "vehicles.vehicle" vehicle.id}}
+        {{vehicle.name}}
+      {{/link-to}}
+    </li>
   {{/each}}
   </ul>
 </div>

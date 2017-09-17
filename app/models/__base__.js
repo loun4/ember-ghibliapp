@@ -16,7 +16,7 @@ export default Ember.Object.extend({
   // Clean the record by extracting uuid from urls and remove usless associations (root urls)
   // This method allow us to always have an array of uuid in the case of an association
   _normalizeUUIDs() {
-    const associations = ['films', 'people', 'vehicles', 'locations', 'species', 'residents'];
+    const associations = ['films', 'people', 'vehicles', 'locations', 'pilot'];
 
     associations.forEach(field => {
       let entry = this.get(field);
