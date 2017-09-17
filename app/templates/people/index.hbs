@@ -1,0 +1,10 @@
+
+{{entity-list
+    data=model
+    cols=(array
+        (hash title='Name' key='name')
+        (hash title='Gender' key='gender')
+        (hash title='Age' key='age')
+    )
+    linkTo=(hash route='people.person' param='id')
+}}

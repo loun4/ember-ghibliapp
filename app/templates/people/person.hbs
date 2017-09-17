@@ -1,0 +1,19 @@
+
+{{entity-page
+  data=model.person
+  sections=(array
+    (hash title='Name' key='name')
+    (hash title='Gender' key='gender')
+    (hash title='Age' key='age')
+    (hash title='Eye color' key='eye_color')
+    (hash title='Hair color' key='hair_color')
+  )
+  relatedEntities=(array
+    (hash
+      title="Films"
+      key="title"
+      data=model.films
+      link='films.film'
+    )
+  )
+}}
