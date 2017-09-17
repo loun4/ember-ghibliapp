@@ -1,0 +1,17 @@
+
+{{#each sections as |section|}}
+  <div>
+    <h2>{{section.title}}</h2>
+    {{get data section.key}}
+  </div>
+{{/each}}
+
+{{#each relatedEntities as |entity|}}
+  <h2>{{entity.title}}</h2>
+
+  {{#each entity.data as |item|}}
+    {{#link-to entity.link item.id}}
+      {{get item entity.key}}
+    {{/link-to}}
+  {{/each}}
+{{/each}}
