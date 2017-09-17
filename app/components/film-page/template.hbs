@@ -1,2 +1,52 @@
 
-{{film.title}}
+<div>
+  {{film.title}}
+</div>
+
+<div>
+  {{film.description}}
+</div>
+
+<div>
+  {{film.director}}
+</div>
+
+<div>
+  {{film.producer}}
+</div>
+
+<div>
+  {{film.release_date}}
+</div>
+
+<div>
+  {{film.rt_score}}
+</div>
+
+
+<div>
+  Poeple
+  <ul>
+  {{#each people as |people|}}
+    <li>{{people.name}}</li>
+  {{/each}}
+  </ul>
+</div>
+
+<div>
+  Locations
+  <ul>
+  {{#each locations as |location|}}
+    <li>{{location.name}}</li>
+  {{/each}}
+  </ul>
+</div>
+
+<div>
+  Vehicles
+  <ul>
+  {{#each vehicles as |vehicle|}}
+    <li>{{vehicle.name}}</li>
+  {{/each}}
+  </ul>
+</div>
