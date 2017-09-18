@@ -2,7 +2,8 @@
 import Ember from 'ember';
 
 const {
-  Component
+  Component,
+  computed
 } = Ember;
 
 export default Component.extend({
@@ -10,5 +11,5 @@ export default Component.extend({
   classNames: 'ui sortable selectable celled table black entity-list',
   data: [],
   cols: [],
-  linkTo: null
+  link: null
 });

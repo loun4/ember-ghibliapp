@@ -9,14 +9,15 @@ const {
 export default Component.extend({
   router: Ember.inject.service(),
   tagName: 'tr',
-  linkTo: null,
+  classNames: 'entity-list__row',
+  link: null,
   item: {},
   cols: [],
 
   click() {
-    if (!this.get('linkTo')) { return; }
-    const { route, param } = this.get('linkTo');
+    const link = this.get('link');
+    if (!link) { return; }
 
-    this.get('router').transitionTo(route, this.get('item')[param]);
+    this.get('router').transitionTo(link, this.get('item.id'));
   }
 });
