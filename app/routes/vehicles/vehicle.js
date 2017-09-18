@@ -1,6 +1,5 @@
 
 import Ember from 'ember';
-import { filterByEntityId } from '../../utils';
 
 
 export default Ember.Route.extend({
