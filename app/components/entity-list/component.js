@@ -20,7 +20,7 @@ export default Component.extend({
   sortedData: computed('data', 'cols', 'sortBy', 'sortDirection', function() {
     const data = this.get('data');
     const by = this.get('sortBy');
-    const { type } = this.get('cols').find(({key}) => key == by);
+    const { type } = this.get('cols').findBy('key', by);
     const direction = this.get('sortDirection');
 
     return data.sort(comparator(by, type, direction));
