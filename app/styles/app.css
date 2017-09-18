@@ -1,6 +1,7 @@
 
-.formatting-context {
+.header {
   overflow: hidden;
+  margin-bottom: 2em;
 }
 
 .loading {

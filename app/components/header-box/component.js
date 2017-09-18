@@ -6,5 +6,6 @@ const {
 } = Ember;
 
 export default Component.extend({
-  classNames: 'formatting-context'
+  classNames: 'header',
+  tagName: 'header'
 });

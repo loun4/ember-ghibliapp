@@ -23,6 +23,8 @@ Router.map(function() {
   this.route('vehicles', function() {
     this.route('vehicle', { path: ':vehicle_id' });
   });
+
+  this.route('staff', function() {});
 });
 
 export default Router;

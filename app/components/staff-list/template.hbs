@@ -1,0 +1,12 @@
+
+{{#each sections as |section|}}
+<div class="eight wide column">
+  <h2 class="ui header">{{section.title}}</h2>
+
+  <ul class="ui list entity-page__list">
+    {{#each section.data as |item|}}
+    <li class="item entity-page__item">{{item}}</li>
+    {{/each}}
+  </ul>
+</div>
+{{/each}}
