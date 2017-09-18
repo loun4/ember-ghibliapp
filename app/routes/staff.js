@@ -6,6 +6,7 @@ const {
   Route
 } = Ember;
 
+
 export default Route.extend({
   model() {
     const { films } = this.modelFor('application');

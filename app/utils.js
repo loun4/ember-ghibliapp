@@ -31,5 +31,6 @@ export const comparator = (by, type, direction) => {
   return fns[type];
 };
 
+
 export const unique = (item, index, items) =>
-  items.indexOf(item) === index
+  items.indexOf(item) === index;

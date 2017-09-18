@@ -6,7 +6,8 @@ const {
 } = Ember;
 
 
-export default Route.extend({	beforeModel() {
-		this.transitionTo('films');
-	}
+export default Route.extend({
+  beforeModel() {
+    this.transitionTo('films');
+  }
 });
