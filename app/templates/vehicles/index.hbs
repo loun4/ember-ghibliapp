@@ -2,9 +2,11 @@
 {{entity-list
     data=model
     cols=(array
-        (hash title='Name' key='name')
-        (hash title='Class' key='vehicle_class')
-        (hash title='Length' key='length')
+        (hash title='Name' key='name' type='string')
+        (hash title='Class' key='vehicle_class' type='string')
+        (hash title='Length' key='length' type='string')
     )
+    sortBy='name'
+    sortDirection='ascending'
     link='vehicles.vehicle'
 }}

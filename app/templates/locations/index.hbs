@@ -2,9 +2,11 @@
 {{entity-list
     data=model
     cols=(array
-        (hash title='Name' key='name')
-        (hash title='Climate' key='climate')
-        (hash title='Terrain' key='terrain')
+        (hash title='Name' key='name' type='string')
+        (hash title='Climate' key='climate' type='string')
+        (hash title='Terrain' key='terrain' type='string')
     )
+    sortBy='name'
+    sortDirection='ascending'
     link='locations.location'
 }}

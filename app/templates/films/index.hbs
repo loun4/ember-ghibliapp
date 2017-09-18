@@ -2,9 +2,11 @@
 {{entity-list
     data=model
     cols=(array
-        (hash title='Title' key='title')
-        (hash title='Relase date' key='release_date')
-        (hash title='Score' key='rt_score')
+        (hash title='Title' key='title' type='string')
+        (hash title='Relase date' key='release_date' type='date')
+        (hash title='RT score' key='rt_score' type='number')
     )
-    linkTo=(hash route='films.film' param='id')
+    sortBy='release_date'
+    sortDirection='descending'
+    link='films.film'
 }}

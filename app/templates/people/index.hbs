@@ -2,9 +2,11 @@
 {{entity-list
     data=model
     cols=(array
-        (hash title='Name' key='name')
-        (hash title='Gender' key='gender')
-        (hash title='Age' key='age')
+        (hash title='Name' key='name' type='string')
+        (hash title='Gender' key='gender' type='string')
+        (hash title='Age' key='age' type='number')
     )
+    sortBy='name'
+    sortDirection='ascending'
     link='people.person'
 }}
