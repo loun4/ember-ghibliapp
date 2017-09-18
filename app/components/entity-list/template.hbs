@@ -2,13 +2,18 @@
 <thead>
   <tr>
   {{#each cols as |col|}}
-      <th>{{col.title}}</th>
+      <th
+        {{action (action "handleSort" col.key)}}
+        class="sorted {{if (eq sortBy col.key) sortDirection}}"
+      >
+        {{col.title}}
+      </th>
   {{/each}}
   </tr>
 </thead>
 
 <tbody>
-  {{#each data as |item|}}
+  {{#each sortedData as |item|}}
       {{entity-list/item
           item=item
           cols=cols
