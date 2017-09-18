@@ -18,8 +18,10 @@ export default Component.extend({
   sortDirection: 'descending',
 
   sortedData: computed('data', 'cols', 'sortBy', 'sortDirection', function() {
-    const data = this.get('data');
     const by = this.get('sortBy');
+    const data = this.get('data');
+    if (!by || !data.length) { return data; }
+
     const { type } = this.get('cols').findBy('key', by);
     const direction = this.get('sortDirection');
 
