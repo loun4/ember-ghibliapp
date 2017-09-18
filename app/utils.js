@@ -12,9 +12,14 @@ export const comparator = (by, type, direction) => {
   direction = directions[direction];
 
   const fns = {
-    number  : (a, b) => (
-      direction * (a.get(by) - b.get(by))
-    ),
+    number  : (a, b) => {
+      let result = a.get(by) - b.get(by);
+
+      if (!isFinite(result))
+        result = !isFinite(a.get(by)) ? 1 : -1;
+
+      return direction * result;
+    },
     string  : (a, b) => (
       direction * String(a.get(by)).localeCompare(b.get(by))
     ),
