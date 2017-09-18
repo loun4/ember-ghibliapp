@@ -1,8 +1,12 @@
 
 import Ember from 'ember';
 
+const {
+  Route
+} = Ember;
 
-export default Ember.Route.extend({
+
+export default Route.extend({
   model({location_id}) {
     const location = this.modelFor('locations').findBy('id', location_id);
 

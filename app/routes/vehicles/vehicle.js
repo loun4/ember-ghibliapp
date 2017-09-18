@@ -1,8 +1,12 @@
 
 import Ember from 'ember';
 
+const {
+  Route
+} = Ember;
 
-export default Ember.Route.extend({
+
+export default Route.extend({
   model({vehicle_id}) {
     const vehicle = this.modelFor('vehicles').findBy('id', vehicle_id);
 

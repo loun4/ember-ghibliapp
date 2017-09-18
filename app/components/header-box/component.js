@@ -5,6 +5,7 @@ const {
   Component
 } = Ember;
 
+
 export default Component.extend({
   classNames: 'header',
   tagName: 'header'

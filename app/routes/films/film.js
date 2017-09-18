@@ -2,8 +2,12 @@
 import Ember from 'ember';
 import { filterByEntityId } from '../../utils';
 
+const {
+  Route
+} = Ember;
 
-export default Ember.Route.extend({
+
+export default Route.extend({
   model({film_id}) {
     const filterByFilmId = filterByEntityId.bind(null, 'films', film_id);
 

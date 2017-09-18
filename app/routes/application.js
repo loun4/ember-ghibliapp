@@ -2,10 +2,11 @@
 import Ember from 'ember';
 
 const {
-  RSVP
+  RSVP,
+  Route
 } = Ember;
 
-export default Ember.Route.extend({
+export default Route.extend({
   model() {
     return RSVP.hash({
       films     : this.store.findAll('film'),
