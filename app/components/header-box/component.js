@@ -1,4 +1,10 @@
+
 import Ember from 'ember';
 
-export default Ember.Component.extend({
+const {
+  Component
+} = Ember;
+
+export default Component.extend({
+  classNames: 'formatting-context'
 });

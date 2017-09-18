@@ -1,20 +1,18 @@
 
-<table>
-  <thead>
-    <tr>
-    {{#each cols as |col|}}
-        <th>{{col.title}}</th>
-    {{/each}}
-    </tr>
-  </thead>
+<thead>
+  <tr>
+  {{#each cols as |col|}}
+      <th>{{col.title}}</th>
+  {{/each}}
+  </tr>
+</thead>
 
-  <tbody>
-    {{#each data as |item|}}
-        {{entity-list/item
-            item=item
-            cols=cols
-            linkTo=linkTo
-        }}
-    {{/each}}
-  </tbody>
-</table>
+<tbody>
+  {{#each data as |item|}}
+      {{entity-list/item
+          item=item
+          cols=cols
+          link=link
+      }}
+  {{/each}}
+</tbody>

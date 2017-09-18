@@ -1,0 +1,67 @@
+
+.formatting-context {
+  overflow: hidden;
+}
+
+.loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -25px 0 0 -25px;
+}
+
+h1.logo {
+  float: left;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.nav {
+  float: right;
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.entity-list__row {
+  cursor: pointer;
+}
+
+.entity-page {
+  text-align: center;
+}
+
+.entity-page__section {
+  width: 80%;
+  margin: 1em auto 2.5em;
+}
+
+.entity-page__title {
+  color: #4183C4;
+  font-size: .6em;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.ui.entity-page__related {
+  margin-top: 5em;
+}
+
+ul.ui.entity-page__list {
+  margin-left: 0;
+}
+
+.entity-page__item {
+  list-style: none;
+}
+
+.entity-page__item:before {
+  display: none;
+}

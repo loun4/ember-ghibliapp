@@ -1,21 +1,33 @@
 
 {{#each sections as |section|}}
-  <div>
-    <h2>{{section.title}}</h2>
-    {{get data section.key}}
+  <div class="entity-page__section">
+    <h2 class="ui horizontal header divider">
+      <span class="entity-page__title">{{section.title}}</span>
+    </h2>
+    <p>
+      {{get data section.key}}
+    </p>
   </div>
 {{/each}}
 
+<div class="ui three column grid entity-page__related">
 {{#each relatedEntities as |entity|}}
-  <h2>{{entity.title}}</h2>
+  <div class="ui column">
+    <h2 class="ui header">{{entity.title}}</h2>
 
-  <ul>
-  {{#each entity.data as |item|}}
-    <li>
-    {{#link-to entity.link item.id}}
-      {{get item entity.key}}
-    {{/link-to}}
-    </li>
-  {{/each}}
-  </ul>
+    <ul class="ui link list entity-page__list">
+    {{#each entity.data as |item|}}
+      <li class="item entity-page__item">
+      {{#link-to entity.link item.id}}
+        {{get item entity.key}}
+      {{/link-to}}
+      </li>
+    {{else}}
+      <li class="item entity-page__item">
+        No item :(
+      </li>
+    {{/each}}
+    </ul>
+  </div>
 {{/each}}
+</div>

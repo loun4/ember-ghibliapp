@@ -1,15 +1,13 @@
 
-<div>
-  <h1>
-    {{#link-to "films"}}
-      <img src="../assets/images/logo.png" alt="Studio Ghibli" />
-    {{/link-to}}
-  </h1>
+<h1 class="logo">
+  {{#link-to "films"}}
+    <img src="../assets/images/logo.png" alt="Studio Ghibli" />
+  {{/link-to}}
+</h1>
 
-  <ul>
-    <li>{{link-to 'Films' 'films'}}</li>
-    <li>{{link-to 'People' 'people'}}</li>
-    <li>{{link-to 'Locations' 'locations'}}</li>
-    <li>{{link-to 'Vehicles' 'vehicles'}}</li>
-  </ul>
-</div>
+<ul class="ui secondary menu nav">
+  <li class="nav__item">{{link-to 'Films' 'films' class="ui button"}}</li>
+  <li class="nav__item">{{link-to 'People' 'people' class="ui button"}}</li>
+  <li class="nav__item">{{link-to 'Locations' 'locations' class="ui button"}}</li>
+  <li class="nav__item">{{link-to 'Vehicles' 'vehicles' class="ui button"}}</li>
+</ul>

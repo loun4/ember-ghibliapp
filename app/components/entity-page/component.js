@@ -9,5 +9,6 @@ const {
 export default Component.extend({
   data: [],
   sections: [],
-  relatedEntities: []
+  relatedEntities: [],
+  classNames: 'entity-page'
 });
