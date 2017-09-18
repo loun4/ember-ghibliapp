@@ -43,7 +43,7 @@ export default Service.extend({
       url += `?${$.param(query)}`;
     }
 
-    return url;
+    return `${ENV.restURL}${url}`;
   },
 
   getModel(name) {

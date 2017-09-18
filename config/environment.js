@@ -6,6 +6,7 @@ module.exports = function(environment) {
     modulePrefix: 'ghibliapp',
     environment,
     rootURL: '/',
+    restURL: 'https://ghibliapi.herokuapp.com',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {

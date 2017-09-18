@@ -31,5 +31,3 @@ Unfortunately this solution is not implemented.
 So, all entities are fetched in application route and filters are handled within models hooks.
 
 If you have another solution, feel free to pull request !
-
-
